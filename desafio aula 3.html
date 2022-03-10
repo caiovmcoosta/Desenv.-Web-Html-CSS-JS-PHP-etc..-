@@ -1,88 +1,150 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Olá Mundo</title>
-        <meta charset='UTF-8'> 
-    </head>
-    <body>
-        <h1>Formulário de Matrícula</h1>
- 
-        <p>Preencha suas informações pessoais:</p><br><br>
-        <label>Nome:
-        <input>
-        </label>
-        <br>
-        <label>Data de Nascimento:
-            <input type="date">
-        </label>
-        <br>
-        <label>CPF:
-            <input>
-        </label>
+  <head>
+    <title>Formulário de Matricula</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Formulário de Matrícula</h1>
+    <br />
 
-        <label>Numero de Telefone:
-            <input type="number">
-        </label>
+    <table cellpadding="7" width="100%" border="0">
+      <tbody>
+        <tr>
+          <td>
+            <h3>Preencha suas informações pessoais:</h3>
+            <ul>
+              <li>
+                <label>
+                  Nome Completo:
+                  <input />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Data de Nascimento:
+                  <input type="date" />
+                </label>
+              </li>
+              <li>
+                <label>
+                  CPF:
+                  <input />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Numero de Telefone:
+                  <input type="number" />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Email:
+                  <input type="email" />
+                </label>
+              </li>
+            </ul>
+            <br />
+          </td>
+          <td>
+            <h3>Preencha suas informações academicas.</h3>
+            <ul>
+              <li>
+                <label>
+                  Ensino Fundamental Completo:
+                  <input type="radio" />
+                  Ensino Fundamental Incompleto:
+                  <input type="radio" />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Ensino Médio Completo:
+                  <input type="radio" />
+                  Ensino Médio Incompleto:
+                  <input type="radio" />
+                </label>
+              </li>
+              <li>
+                <label>
+                  Ensino Superior Completo:
+                  <input type="radio" />
+                  Ensino Superior Incompleto:
+                  <input type="radio" />
+                </label>
+              </li>
+              <br />
+              <li>
+                <label>
+                  Data de Conclusão:
+                  <input type="month" />
+                </label>
+              </li>
+              <br />
+              <li>
+                <label>
+                  Anexo Histórico Escolar:
+                  <input type="file" />
+                </label>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table cellpadding="7" width="94%" border="0">
+      <tbody>
+        <tr>
+          <td>
+            <h3>Selecione a faixa de preço que deseja pagar:</h3>
+            <ul>
+              <li>
+                <label>
+                  Valor máximo:
+                  <input type="range" min="0" max="999" list="tickmarks" />
+                  <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="99"></option>
+                    <option value="199"></option>
+                    <option value="299"></option>
+                    <option value="399"></option>
+                    <option value="499"></option>
+                    <option value="599"></option>
+                    <option value="699"></option>
+                    <option value="799"></option>
+                    <option value="899"></option>
+                    <option value="999"></option>
+                  </datalist>
+                </label>
+              </li>
+            </ul>
+          </td>
 
-        <label>Email:
-            <input type="email">
-        </label>
-
-        <label>Ensino Fundamental Incompleto:
-            <input type="radio">
-        </label>
-
-        <label>Ensino Fundamental Completo:
-            <input type="radio">
-        </label>
-
-        <label>Ensino Médio Incompleto:
-            <input type="radio">
-        </label>
-
-        <label>Ensino Médio Completo:
-            <input type="radio">
-        </label>
-
-        <label>Ensino Superior Incompleto:
-            <input type="radio">
-        </label>
-
-        <label>Ensino Superior Completo:
-            <input type="radio">
-        </label>
-
-        <label>Data de Conclusão:
-            <input type="month">
-        </label>
-
-        <label>Anexo Histórico Escolar:
-            <input type="file">
-        </label>
-
-        <label>Valor máximo:
-            <input type="range" min="0" max="999" list="tickmarks"> 
-            <datalist id="tickmarks">
-                <option value="0">
-                <option value="90">
-                <option value="100">
-                <option value="200">
-                <option value="300">
-                <option value="400">
-                <option value="500">
-                <option value="600">
-                <option value="700">
-                <option value="800">
-                <option value="999">
-            </datalist>
-        </label>
-
-        <label>Reiniciar preenchimento:
-            <input type="reset">
-        </label>
-
-        <label>Enviar formulário:
-            <input type="submit">
-        </label>
-    </body>
+          <td>
+            <h3>Finalização:</h3>
+            <br />
+            <table cellpadding="7" width="80%" border="0">
+              <tbody>
+                <tr>
+                  <td>
+                    <label>
+                      Reiniciar preenchimento:
+                      <input type="reset" />
+                    </label>
+                  </td>
+                  <td>
+                    <label>
+                      Enviar formulário:
+                      <input type="submit" />
+                    </label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
